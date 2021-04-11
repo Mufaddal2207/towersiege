@@ -1,7 +1,7 @@
 class SlingShot{
-    constructor(pointA, pointB){
+    constructor(bodyA, pointB){
         var options = {
-            pointA: pointA,
+            bodyA: bodyA,
             pointB: pointB,
             stiffness: 0.04,
             length: 10
@@ -13,14 +13,14 @@ class SlingShot{
     }
 
     fly(){
-        this.sling.pointA = null;
+        this.sling.bodyA = null;
     }
 
     display(){
        
 
-        if(this.sling.pointA){
-            var pointA = this.sling.pointA.position;
+        if(this.sling.bodyA){
+            var bodyA = this.sling.bodyA.position;
             var pointB = this.pointB;
          
             
@@ -28,3 +28,4 @@ class SlingShot{
     
 }
     }
+}
